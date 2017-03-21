@@ -1,0 +1,210 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        tools:context=".MainActivity" 
+        android:orientation="vertical"
+        android:background="@color/GreyBgColor" 
+        android:paddingBottom="10dp">
+    
+    <!--Top Menu Bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/RedBgColor">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="26dp"
+            android:src="@drawable/back_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Device Registration Details"
+            android:textSize="18sp"
+            android:textColor="@color/WhiteTextColor"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <!--//Top Menu Bar-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/WhiteBgColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Device IMEI No"
+                android:textSize="13sp"
+                android:textColor="@color/GreyTextColor"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=": "
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+            
+            <TextView
+                android:id="@+id/txt_imei_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Device OS"
+                android:textSize="13sp"
+                android:textColor="@color/GreyTextColor"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=": "
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+            
+            <TextView
+                android:id="@+id/txt_device_os"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Device IP"
+                android:textSize="13sp"
+                android:textColor="@color/GreyTextColor"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=": "
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+            
+            <TextView
+                android:id="@+id/txt_device_ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Device ID"
+                android:textSize="13sp"
+                android:textColor="@color/GreyTextColor"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:text=": "
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+            
+            <TextView
+                android:id="@+id/txt_device_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text=""
+                android:textSize="13sp"
+                android:textColor="@color/BlackTextColor"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Register"
+        android:textSize="13sp"
+        android:textColor="@color/WhiteTextColor"
+        android:background="@drawable/emp_reg_button"
+        android:textAllCaps="true"
+        android:stateListAnimator="@null"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+</LinearLayout>
+</ScrollView>
