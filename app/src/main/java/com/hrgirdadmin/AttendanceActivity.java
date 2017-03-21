@@ -123,7 +123,7 @@ public class AttendanceActivity extends AppCompatActivity implements SGFingerPre
     String ResponseCode, Message;
     boolean[] matched = new boolean[1];
 
-    ProgressDialog progressDialog;
+    ProgressDialog progressDialog;  
 
     static boolean logout_status = true;
     Timer timer;
